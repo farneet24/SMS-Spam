@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import string
 import time
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 import nltk
 from sklearn.naive_bayes import MultinomialNB
