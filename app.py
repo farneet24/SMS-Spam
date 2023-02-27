@@ -9,7 +9,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem.porter import PorterStemmer
 import pickle
 
-nltk.download('stopwords') 
+nltk.download('stopwords')
+nltk.download('punkt')
 from nltk.corpus import stopwords
 
 st.set_page_config(
