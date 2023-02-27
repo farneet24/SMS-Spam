@@ -3,13 +3,14 @@ import pandas as pd
 import numpy as np
 import string
 import time
-nltk.download('stopwords')
-from nltk.corpus import stopwords
 import nltk
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem.porter import PorterStemmer
 import pickle
+
+nltk.download('stopwords') 
+from nltk.corpus import stopwords
 
 st.set_page_config(
     page_title="SMS Spam Analyzer",
