@@ -138,7 +138,7 @@ with st.form('your_feedback'):
     if st.form_submit_button("Yes 👍"):
         st.write("Thank you for your feedback! We're glad to hear that our tool was useful.")
     elif st.form_submit_button("No 👎"):
-        st.markdown('''We're sorry to hear that our tool was not useful. Please let us know how we can improve it. <a href="https://contact-us-6q8g.onrender.com/">Contact Us</a>''', unsafe_allow_html=True)
+        st.markdown('''We're sorry to hear that our tool was not useful. Please let us know how we can improve it. <a href="https://farneet24-contact-contact-y0vege.streamlit.app/">Contact Us</a>''', unsafe_allow_html=True)
 
 
 st.write('\n')
