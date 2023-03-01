@@ -56,10 +56,11 @@ tfidf = pickle.load(open('vectorizer2.pkl', 'rb'))
 model = pickle.load(open('model2.pkl', 'rb'))
 
 st.sidebar.title("SMS/Email Spam Analyser")
+st.sidebar.text('Developed by Farneet Singh')
+
 
 
 st.header('Enter the SMS or Email:')
-st.sidebar.header('Developed by Farneet Singh')
 
 input_sms = st.text_area('', placeholder='Enter the text here', height=150)
 
