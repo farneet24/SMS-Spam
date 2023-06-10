@@ -72,6 +72,7 @@ if st.button('Analyze'):
     # 2. vectorize
     vector_input = tfidf.transform([transformed_sms])
     # 3. predict
+    vector_input = vector_input.toarray()
     result = model.predict(vector_input)[0]
     # 4. Display
     if result == 1:
