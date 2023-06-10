@@ -52,8 +52,10 @@ def transform_text(text):
     
     return " ".join(y)
     
-tfidf = pickle.load(open('vectorizer2.pkl', 'rb'))
-model = pickle.load(open('model2.pkl', 'rb'))
+# tfidf = pickle.load(open('vectorizer2.pkl', 'rb'))
+# model = pickle.load(open('model2.pkl', 'rb'))
+tfidf = pickle.load(open('vector.pkl', 'rb'))
+model = pickle.load(open('advanced.pkl', 'rb'))
 
 st.sidebar.title("SMS/Email Spam Analyser")
 st.sidebar.text('Developed by Farneet Singh')
