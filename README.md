@@ -6,9 +6,6 @@
 - [Features](#features)
 - [Model Performance](#model-performance)
 - [Live Demo](#live-demo)
-- [Getting Started](#getting-started)
-- [Contributions](#contributions)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
