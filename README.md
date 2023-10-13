@@ -30,4 +30,4 @@ The project is hosted on Streamlit Server. You can check out the live demo [here
 ## Contact
 For any queries or discussions, feel free to contact the maintainer.
 
-[Farneet Singh](farneetsingh_co21a3_72@dtu.ac.in)
+[Farneet Singh](mailto:farneetsingh_co21a3_72@dtu.ac.in)
