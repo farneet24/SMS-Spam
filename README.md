@@ -2,43 +2,56 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Technology Stack](#technology-stack)
-- [Functionalities](#functionalities)
-- [Model Metrics](#model-metrics)
+- [Dataset and Data Cleaning](#dataset-and-data-cleaning)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Preprocessing](#data-preprocessing)
+- [Machine Learning Algorithms](#machine-learning-algorithms)
+- [Model Performance Metrics](#model-performance-metrics)
 - [Live Demonstration](#live-demonstration)
 - [Reach Out](#reach-out)
 
 ## Overview
+SMS/Email Spam Detector is an intelligent, machine learning-powered tool designed for highly accurate spam classification in text messages and emails.
 
-SMS/Email Spam Detector is a machine learning-powered solution designed to accurately filter and classify spam in text messages and emails. Utilizing cutting-edge text preprocessing techniques and a selection of machine learning classifiers, the system ensures high reliability in distinguishing spam from legitimate ("ham") content.
+## Dataset and Data Cleaning
+- Utilized Spam-Ham dataset from Kaggle, enriched with additional spam messages.
+- Final composition: 69% ham, 31% spam.
+- Data cleaning involved the removal of duplicates and null values.
 
-## Technology Stack
+## Exploratory Data Analysis
+- Used NLTK to derive metrics like the number of characters, words, and sentences in messages.
+- Calculated statistical measures (mean, std, percentiles, etc.) to understand message trends.
+- Visualizations include pairplots and heatmaps for feature correlation.
+- Identified maximum correlation between the number of characters and the message label (spam/ham).
 
-- **Python**: The foundational programming language for the project.
-- **Natural Language Toolkit (NLTK)**: Used for text preprocessing and feature extraction.
-- **Machine Learning Algorithms**: Bernoulli Naive Bayes, ExtraTreesClassifier, and Support Vector Classifier (SVC) among others.
+## Data Preprocessing
+- Employed NLTK for text preprocessing tasks such as lowercasing, stemming/lemmatization, tokenization, and removal of stopwords.
+- Identified the top 10 words used in each type of message (spam/ham).
 
-## Functionalities
+## Machine Learning Algorithms
 
-### Text Preprocessing
-- Utilizes NLTK for robust text cleansing and feature engineering.
-
-### Algorithm Evaluation
-- Assesses a range of machine learning classifiers to identify the most effective algorithms for spam detection.
+### Individual Classifiers
+- Initialized classifiers with custom hyperparameters like `SVC(kernel='sigmoid', gamma=1.0)`, `KNeighborsClassifier()`, `BernoulliNB()`, etc.
 
 ### Ensemble Methods
-- Employs ensemble techniques, such as Voting and Stacking Classifiers, to maximize model performance.
+- Best performing classifiers were Bernoulli Naive Bayes (NB), ExtraTreesClassifier (ETC), and Support Vector Classifier (SVC).
+- Applied Voting and Stacking classifiers to combine the top-performing models for optimal results.
 
-## Model Metrics
+## Model Performance Metrics
+- Achieved outstanding accuracy, precision, recall, and F1 scores. See table below for metrics:
 
-The implemented ensemble methods yield a staggering accuracy rate of 98%, showcasing the reliability of the model.
+| Method | Accuracy  | Precision | Recall   | F1 Score |
+|--------|-----------|-----------|----------|----------|
+| NB     | 0.978888  | 0.980392  | 0.947867 | 0.963855 |
+| ETC    | 0.973962  | 0.972973  | 0.938389 | 0.955368 |
+| SVC    | 0.971851  | 0.972772  | 0.931280 | 0.951574 |
+
+- Utilized Python's `pickle` library to serialize the final model for deployment.
 
 ## Live Demonstration
-
-Experience the live functionality of the Spam Detector hosted on a Streamlit server [here](https://farneet24-sms-spam-app-r53bi4.streamlit.app/).
+For a hands-on experience, visit the live demo [here](https://farneet24-sms-spam-app-r53bi4.streamlit.app/).
 
 ## Reach Out
-
-For collaboration or inquiries, connect with the project maintainer:
+For inquiries or collaboration, feel free to connect with the project maintainer:
 
 [Farneet Singh](mailto:farneetsingh_co21a3_72@dtu.ac.in)
