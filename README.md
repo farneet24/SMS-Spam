@@ -52,4 +52,4 @@ SMS/Email Spam Detector is an intelligent, machine learning-powered tool designe
 For a hands-on experience, visit the live demo [here](https://farneet24-sms-spam-app-r53bi4.streamlit.app/).
 
 ## Reach Out
-For inquiries, suggestions, or contributions, you can mail me: [Farneet Singh](mailto:farneetsingh_co21a3_72@dtu.ac.in) or connect with me through [LinkedIn](https://www.linkedin.com/in/farneet-singh-6b155b208/).
+For inquiries, suggestions, or contributions, you can mail me: [Farneet Singh](mailto:farneetsingh_co21a3_72@dtu.ac.in) or connect with me through [LinkedIn](https://www.linkedin.com/in/farneet-singh-6b155b208/). Thank you :)
