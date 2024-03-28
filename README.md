@@ -11,9 +11,12 @@
 - [Reach Out](#reach-out)
 
 ## Overview
-SMS/Email Spam Detector is an intelligent, machine learning-powered tool designed for highly accurate spam classification in text messages and emails.
+SMS/Email Spam Detector is an intelligent, machine learning-powered tool designed to accurately classify spam in text messages and emails.
 
 ## Dataset and Data Cleaning
+
+The dataset was significantly enhanced by fine-tuning GPT-3.5 to generate synthetic SMS data, improving its diversity and realism for model training.
+
 - Utilized Spam-Ham dataset from Kaggle, enriched with additional spam messages.
 - Final composition: 69% ham, 31% spam.
 - Data cleaning involved the removal of duplicates and null values.
