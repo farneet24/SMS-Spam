@@ -56,3 +56,9 @@ For a hands-on experience, visit the live demo [here](https://farneet24-sms-spam
 
 ## Reach Out
 For inquiries, suggestions, or contributions, you can mail me: [Farneet Singh](mailto:farneetsingh_co21a3_72@dtu.ac.in) or connect with me through [LinkedIn](https://www.linkedin.com/in/farneet-singh-6b155b208/). Thank you :)
+
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+The project is licensed under the MIT License.
